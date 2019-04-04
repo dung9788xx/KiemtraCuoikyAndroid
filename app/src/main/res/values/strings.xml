@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Quản Lý Cafe</string>
+    <string name="title_activity_nhan_vien">Danh sách nhân viên</string>
+</resources>

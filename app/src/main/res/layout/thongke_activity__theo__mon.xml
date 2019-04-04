@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame"
+    tools:context=".ThongKe.Theo_Mon.Activity_Theo_Mon">
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+
+                android:layout_height="wrap_content"
+                android:text="Từ ngày "
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edttungay"
+                android:layout_width="150dp"
+
+                android:layout_height="wrap_content"
+                android:editable="false" />
+
+            <ImageButton
+                android:id="@+id/datepick1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date_range_black_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Đến ngày "
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edtdenngay"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:editable="false" />
+
+            <ImageButton
+                android:id="@+id/datepick2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date_range_black_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/timkiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tìm kiếm" />
+        </LinearLayout>
+        <Button
+           android:textStyle="italic"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/bieudo"
+            android:textSize="13sp"
+            android:text="Xem theo biểu đồ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progress"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/notresult"
+                android:layout_gravity="center"
+                android:textColor="#E91E63"
+                android:textSize="20sp"
+                android:text="Không thấy kết quả !"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:id="@+id/mamon"
+                    android:text="Mã món"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:text="  Tên món"
+                    android:id="@+id/tenmon"
+                    android:layout_toRightOf="@id/mamon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:id="@id/sl"
+                    android:text="Số lượng"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@id/mamon"
+                    android:id="@+id/recy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

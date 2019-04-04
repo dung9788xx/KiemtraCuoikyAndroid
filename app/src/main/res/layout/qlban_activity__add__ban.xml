@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QlBan.Activity_Add_Ban">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:layout_gravity="center"
+               android:src="@drawable/ic_table"
+               android:layout_width="24dp"
+               android:layout_height="24dp" />
+           <android.support.design.widget.TextInputLayout
+               android:layout_marginLeft="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <android.support.design.widget.TextInputEditText
+                   android:id="@+id/tenban"
+                   android:hint="Tên bàn"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+           </android.support.design.widget.TextInputLayout>
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_settings_black_24dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:text="Trạng thái:   "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textStyle="bold"
+            android:text="Hoạt động"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <RadioButton
+                android:onClick="onclick"
+                android:id="@+id/hoatdong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:text="Bảo trì"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:onClick="onclick"
+                android:id="@+id/baotri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center|bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/back"
+            android:text="Quay lại"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="Thêm"
+            android:id="@+id/them"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>
+</android.support.constraint.ConstraintLayout>

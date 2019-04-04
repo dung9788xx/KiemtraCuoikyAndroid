@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ngaoda.php">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ThongKe.TimKiemTheoTen.Activity_Tim_Kiem_TheoTen"></activity>
+        <activity android:name=".QLNhanVien.TimNhanVien.Activity_Tim_KhachHang" />
+        <activity android:name=".QLNhanVien.TinhLuong.Activity_ChiTietNgayCong" />
+        <activity android:name=".QLNhanVien.TinhLuong.Activity_TinhLuong" />
+        <activity android:name=".QLNhanVien.Activity_QLNhanVien" />
+        <activity android:name=".QLNhanVien.QlChamCong.Activity_Cham_Cong" />
+        <activity android:name=".ThongKe.Nhan_Vien.Activity_Hien_Thi_Info" />
+        <activity android:name=".ThongKe.Nhan_Vien.Activity_Theo_Nhan_Vien" />
+        <activity android:name=".ThongKe.Theo_Mon.Activity_Pie_Chart" />
+        <activity android:name=".ThongKe.Theo_Mon.Activity_Theo_Mon" />
+        <activity android:name=".ThongKe.Lich_Su.Activity_Lich_Su" />
+        <activity android:name=".ThongKe.Activity_List_Thongke" />
+        <activity android:name=".QlBan.Activity_Edit_Ban" />
+        <activity android:name=".QlBan.Activity_Add_Ban" />
+        <activity android:name=".QlMon.Activity_Edit_Mon" />
+        <activity android:name=".QlBan.Activity_List_Ban" />
+        <activity android:name=".QlMon.Activity_Add_Mon" />
+        <activity android:name=".QlMon.Activity_List_Mon" />
+        <activity android:name=".QlDat.Activity_Pay_Info" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".QLNhanVien.DanhSach.Activity_List_NhanVien"
+            android:label="@string/title_activity_nhan_vien"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".QLNhanVien.DanhSach.Activity_Add_NhanVien" />
+        <activity android:name=".AdminActivity" /> <!-- <activity android:name=".QlDat.Main3Activity" /> -->
+        <activity android:name=".QlDat.Activity_Table_State" />
+        <activity android:name=".QLNhanVien.DanhSach.Activity_Edit_NhanVien" />
+        <activity android:name=".QlDat.Activity_Book_Info" />
+    </application>
+
+</manifest>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThongKe.Nhan_Vien.Activity_Theo_Nhan_Vien">
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:id="@+id/spiner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"></Spinner>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:onClick="onclick"
+            android:textStyle="bold"
+            android:id="@+id/nvdat"
+            android:text="Bàn đã đặt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:onClick="onclick"
+            android:textStyle="bold"
+            android:id="@+id/nvtt"
+            android:text="Bàn đã thanh toán"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+
+            android:layout_height="wrap_content"
+            android:text="Từ ngày "
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edttungay"
+            android:layout_width="150dp"
+
+            android:layout_height="wrap_content"
+            android:editable="false" />
+
+        <ImageButton
+            android:id="@+id/datepick1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_date_range_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Đến ngày "
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edtdenngay"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:editable="false" />
+
+        <ImageButton
+            android:id="@+id/datepick2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_date_range_black_24dp" />
+    </LinearLayout>
+
+        <Button
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/timkiem"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Tìm kiếm" />
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/notresult"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textColor="#D50000"
+        android:text="Không thấy kết quả"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

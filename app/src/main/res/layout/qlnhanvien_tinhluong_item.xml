@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="1. "
+            android:id="@+id/stt"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:text="TRuong van dung"
+                android:id="@+id/hoten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textStyle="italic"
+                android:textSize="17sp"
+                android:text="13/3/1997"
+                android:id="@+id/ngaysinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:textColor="#D50000"
+        android:text="dfdfdfdfg"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right|center"
+        android:id="@+id/tien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.v7.widget.CardView>
